@@ -79,7 +79,7 @@ FileSystem *fileSystem;
 {
     // Return YES for supported orientations
     if ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPhone) {
-        return (interfaceOrientation == UIInterfaceOrientationLandscapeLeft);
+        return (interfaceOrientation == UIInterfaceOrientationPortrait);
     } else {
         return YES;
     }
