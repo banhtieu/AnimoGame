@@ -19,10 +19,7 @@ public:
   virtual void Update();
   virtual void Free();
 protected:
-  Texture *logo;
-  Texture *background;
-  int logoFrame;
-  Sprite *sprite;
+  Sprite *splashSprite;
 };
 
 #endif

@@ -13,8 +13,8 @@
 
 // The Global Configurations are here.
 
-#define SCREEN_W 960
-#define SCREEN_H 640
+#define SCREEN_W 640
+#define SCREEN_H 960
 #define SCREEN_WD2 (SCREEN_W >> 1)
 #define SCREEN_HD2 (SCREEN_H >> 1)
 
