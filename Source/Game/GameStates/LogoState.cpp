@@ -9,7 +9,7 @@
 #include "LogoState.h"
 //#include "BackgroundData.h"
 #include "Splash.h"
-
+#include "MainMenuState.h"
 void LogoState::Init()
 {
   splashSprite = new Sprite();
@@ -23,6 +23,10 @@ void LogoState::Render(Graphics2D *g)
 
 void LogoState::Update()
 {
+  if (TouchManager::GetInstance()->IsTouchInRect(0, 0, SCREEN_W, SCREEN_H))
+  {
+    Application::GetInstance()->SwitchState(new MainMenuState());
+  }
 }
 
 void LogoState::Free()

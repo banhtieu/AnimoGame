@@ -1,0 +1,27 @@
+//
+//  MainMenuState.h
+//  AnimoGame
+//
+//  Created by Quang Phan on 13/03/2012.
+//  Copyright (c) 2012 __MyCompanyName__. All rights reserved.
+//
+
+#ifndef AnimoGame_MainMenuState_h
+#define AnimoGame_MainMenuState_h
+
+#include "Engine.h"
+
+class MainMenuState: public State, Singleton<MainMenuState>
+{
+public:
+  virtual void Init();
+  virtual void Render(Graphics2D *g);
+  virtual void Update();
+  virtual void Free();
+protected:
+  Sprite *bgSprite;
+};
+
+
+
+#endif
