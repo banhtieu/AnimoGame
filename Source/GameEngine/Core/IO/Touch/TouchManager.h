@@ -32,6 +32,8 @@ public:
   virtual TouchList* GetTouches();
   virtual int GetNumberOfTouches();
   virtual bool IsTouchInRect(int x, int y, int w, int h);
+  virtual bool IsTouchDownInRect(int x, int y, int w, int h);
+  virtual bool IsTouchUpInRect(int x, int y, int w, int h);
   
 private:
   TouchList *touches;

@@ -11,6 +11,7 @@
 
 #include "Engine.h"
 
+#define NUM_MENU 7
 class MainMenuState: public State, Singleton<MainMenuState>
 {
 public:
@@ -22,6 +23,7 @@ protected:
   Sprite *bgSprite;
   Sprite *menuSprite;
   StringManager *stringManager;
+  MenuInstance *menuList[NUM_MENU];
 };
 
 

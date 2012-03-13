@@ -195,11 +195,11 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "../../Source/Game/GameStates/MainMenuState.cpp"
-         timestampString = "353342745.762468"
+         timestampString = "353350152.625651"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "42"
-         endingLineNumber = "42"
+         startingLineNumber = "82"
+         endingLineNumber = "82"
          landmarkName = "MainMenuState::Update()"
          landmarkType = "5">
       </FileBreakpoint>
@@ -221,38 +221,12 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "../../Source/Game/GameStates/MainMenuState.cpp"
-         timestampString = "353342745.762468"
-         startingColumnNumber = "9223372036854775807"
-         endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "31"
-         endingLineNumber = "31"
-         landmarkName = "MainMenuState::Render(Graphics2D *g)"
-         landmarkType = "5">
-      </FileBreakpoint>
-      <FileBreakpoint
-         shouldBeEnabled = "No"
-         ignoreCount = "0"
-         continueAfterRunningActions = "No"
-         filePath = "../../Source/Game/GameStates/MainMenuState.cpp"
          timestampString = "353341202.568072"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
          startingLineNumber = "17"
          endingLineNumber = "17"
          landmarkName = "MainMenuState::Init()"
-         landmarkType = "5">
-      </FileBreakpoint>
-      <FileBreakpoint
-         shouldBeEnabled = "No"
-         ignoreCount = "0"
-         continueAfterRunningActions = "No"
-         filePath = "../../Source/Game/GameStates/MainMenuState.cpp"
-         timestampString = "353342745.762468"
-         startingColumnNumber = "9223372036854775807"
-         endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "31"
-         endingLineNumber = "31"
-         landmarkName = "MainMenuState::Render(Graphics2D *g)"
          landmarkType = "5">
       </FileBreakpoint>
       <FileBreakpoint
