@@ -105,6 +105,7 @@
 		C399354114FE613200AA4169 /* WinDevice.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C399353514FE613200AA4169 /* WinDevice.cpp */; };
 		C3AAF3BA1503D75F006BDB33 /* ItemInstance.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C3AAF3B91503D75F006BDB33 /* ItemInstance.cpp */; };
 		C3AAF3C11503DD1F006BDB33 /* ItemInventory.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C3AAF3C01503DD1F006BDB33 /* ItemInventory.cpp */; };
+		C3B9A3C3150F8F680095AE45 /* MenuBar.bin in Resources */ = {isa = PBXBuildFile; fileRef = C3B9A3C2150F8F680095AE45 /* MenuBar.bin */; };
 		C3BDD619150E383C0036ECA4 /* tinystr.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C3BDD613150E383C0036ECA4 /* tinystr.cpp */; };
 		C3BDD61A150E383C0036ECA4 /* tinyxml.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C3BDD615150E383C0036ECA4 /* tinyxml.cpp */; };
 		C3BDD61B150E383C0036ECA4 /* tinyxmlerror.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C3BDD617150E383C0036ECA4 /* tinyxmlerror.cpp */; };
@@ -294,6 +295,9 @@
 		C3AAF3BC1503D784006BDB33 /* ItemInstance.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ItemInstance.h; sourceTree = "<group>"; };
 		C3AAF3C01503DD1F006BDB33 /* ItemInventory.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ItemInventory.cpp; sourceTree = "<group>"; };
 		C3AAF3C21503DD29006BDB33 /* ItemInventory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ItemInventory.h; sourceTree = "<group>"; };
+		C3B9A3BF150F8E0D0095AE45 /* MainMenuBG.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MainMenuBG.h; path = ../../../Source/Game/Generated/MainMenuBG.h; sourceTree = "<group>"; };
+		C3B9A3C0150F8E0D0095AE45 /* MenuBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MenuBar.h; path = ../../../Source/Game/Generated/MenuBar.h; sourceTree = "<group>"; };
+		C3B9A3C2150F8F680095AE45 /* MenuBar.bin */ = {isa = PBXFileReference; lastKnownFileType = archive.macbinary; name = MenuBar.bin; path = ../../../Binary/MenuBar.bin; sourceTree = "<group>"; };
 		C3BDD613150E383C0036ECA4 /* tinystr.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = tinystr.cpp; path = ../../Library/tinyXml/tinystr.cpp; sourceTree = "<group>"; };
 		C3BDD614150E383C0036ECA4 /* tinystr.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = tinystr.h; path = ../../Library/tinyXml/tinystr.h; sourceTree = "<group>"; };
 		C3BDD615150E383C0036ECA4 /* tinyxml.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = tinyxml.cpp; path = ../../Library/tinyXml/tinyxml.cpp; sourceTree = "<group>"; };
@@ -534,6 +538,8 @@
 		37D6F22C14FFCD2300008965 /* Generated */ = {
 			isa = PBXGroup;
 			children = (
+				C3B9A3BF150F8E0D0095AE45 /* MainMenuBG.h */,
+				C3B9A3C0150F8E0D0095AE45 /* MenuBar.h */,
 				378E33E3150E546A00F72E9B /* Splash.h */,
 				37FFAD3E150C7E8000571DA1 /* ExportedStrings.h */,
 			);
@@ -597,6 +603,7 @@
 		37F6F42414F532580028EDC4 /* Binary */ = {
 			isa = PBXGroup;
 			children = (
+				C3B9A3C2150F8F680095AE45 /* MenuBar.bin */,
 				378E33E1150E543B00F72E9B /* Splash.bin */,
 				C35535AE150E6FF1007D4774 /* MainMenuBG.bin */,
 				37619982150B8E20003B400F /* strings.en.bin */,
@@ -851,6 +858,7 @@
 				37619985150B8E20003B400F /* strings.vi.bin in Resources */,
 				378E33E2150E543B00F72E9B /* Splash.bin in Resources */,
 				C35535AF150E6FF1007D4774 /* MainMenuBG.bin in Resources */,
+				C3B9A3C3150F8F680095AE45 /* MenuBar.bin in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

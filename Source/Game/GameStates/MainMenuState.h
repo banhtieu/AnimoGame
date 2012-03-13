@@ -20,6 +20,8 @@ public:
   virtual void Free();
 protected:
   Sprite *bgSprite;
+  Sprite *menuSprite;
+  StringManager *stringManager;
 };
 
 

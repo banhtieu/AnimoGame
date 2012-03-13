@@ -8,18 +8,33 @@
 
 
 #include "MainMenuState.h"
-//#include "BackgroundData.h"
-
+#include "MenuBar.h"
+#include "ExportedStrings.h"
 
 void MainMenuState::Init()
 {
   bgSprite = new Sprite();
   bgSprite->LoadSprite("MainMenuBG");
+  
+  menuSprite = new Sprite();
+  menuSprite->LoadSprite("MenuBar");
+  
+  stringManager = new StringManager();
+  stringManager->Load("strings.en.bin");
+  stringManager->SetColor(Color(0.0f, 0.0f, 0.0f, 1.0f));
 }
 
 void MainMenuState::Render(Graphics2D *g)
 {
   bgSprite->DrawModule(0, 0, 0);
+ 
+  for(int i=0; i<3; i++)
+  {
+    menuSprite->DrawModule(i*2, 40, SCREEN_HD2 -20 + 100*i);
+    stringManager->Draw(STR_MENU_PLAY+i, SCREEN_WD2 - 80, SCREEN_HD2 + 100*i);
+
+  }
+  menuSprite->DrawModule(M_ABOUT_BTN, SCREEN_W - 180, SCREEN_H - 180);
 };
 
 void MainMenuState::Update()
