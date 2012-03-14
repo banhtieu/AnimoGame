@@ -10,11 +10,6 @@
 #include "Engine.h"
 
 
-void sss()
-{
-  
-}
-
 bool MenuInstance::isPressed()
 {
   if (TouchManager::GetInstance()->IsTouchInRect(x, y, w, h))

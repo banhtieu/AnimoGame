@@ -57,6 +57,7 @@
 		372FC5C2150519D8009376E0 /* TouchManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 372FC5BF150519D8009376E0 /* TouchManager.cpp */; };
 		37619984150B8E20003B400F /* strings.en.bin in Resources */ = {isa = PBXBuildFile; fileRef = 37619982150B8E20003B400F /* strings.en.bin */; };
 		37619985150B8E20003B400F /* strings.vi.bin in Resources */ = {isa = PBXBuildFile; fileRef = 37619983150B8E20003B400F /* strings.vi.bin */; };
+		378082581510D8A8005027EF /* InGameState.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 378082571510D8A8005027EF /* InGameState.cpp */; };
 		3781E2DF14F53A6E006E426E /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 3781E2DE14F53A6E006E426E /* libz.dylib */; };
 		3781E2E514F53F88006E426E /* Shader.fsh in Resources */ = {isa = PBXBuildFile; fileRef = 3781E2E314F53F88006E426E /* Shader.fsh */; };
 		3781E2E614F53F88006E426E /* Shader.vsh in Resources */ = {isa = PBXBuildFile; fileRef = 3781E2E414F53F88006E426E /* Shader.vsh */; };
@@ -212,6 +213,8 @@
 		372FC5C0150519D8009376E0 /* TouchManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TouchManager.h; sourceTree = "<group>"; };
 		37619982150B8E20003B400F /* strings.en.bin */ = {isa = PBXFileReference; lastKnownFileType = archive.macbinary; name = strings.en.bin; path = ../../../Binary/strings.en.bin; sourceTree = "<group>"; };
 		37619983150B8E20003B400F /* strings.vi.bin */ = {isa = PBXFileReference; lastKnownFileType = archive.macbinary; name = strings.vi.bin; path = ../../../Binary/strings.vi.bin; sourceTree = "<group>"; };
+		378082571510D8A8005027EF /* InGameState.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = InGameState.cpp; sourceTree = "<group>"; };
+		3780825A1510D8C0005027EF /* InGameState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InGameState.h; sourceTree = "<group>"; };
 		3781E2DE14F53A6E006E426E /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
 		3781E2E314F53F88006E426E /* Shader.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; name = Shader.fsh; path = ../../../Binary/Shader.fsh; sourceTree = "<group>"; };
 		3781E2E414F53F88006E426E /* Shader.vsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; name = Shader.vsh; path = ../../../Binary/Shader.vsh; sourceTree = "<group>"; };
@@ -665,6 +668,8 @@
 				C364976314F68E2200E4630A /* LogoState.h */,
 				C35535AA150E6D74007D4774 /* MainMenuState.cpp */,
 				C35535AC150E6D80007D4774 /* MainMenuState.h */,
+				3780825A1510D8C0005027EF /* InGameState.h */,
+				378082571510D8A8005027EF /* InGameState.cpp */,
 			);
 			name = GameStates;
 			path = ../../../Source/Game/GameStates;
@@ -959,6 +964,7 @@
 				C3BDD61C150E383C0036ECA4 /* tinyxmlparser.cpp in Sources */,
 				C35535AB150E6D74007D4774 /* MainMenuState.cpp in Sources */,
 				C3B9A3C9150F9B8C0095AE45 /* MenuInstance.cpp in Sources */,
+				378082581510D8A8005027EF /* InGameState.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

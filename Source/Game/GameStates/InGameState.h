@@ -9,6 +9,19 @@
 #ifndef AnimoGame_InGameState_h
 #define AnimoGame_InGameState_h
 
+#include "Engine.h"
 
+/**
+ * The In Game State 
+ **/
+class InGameState: public State, public Singleton<InGameState>
+{
+public:
+  void Init();
+  void Update();
+  void Render(Graphics2D *g);
+  void Free();
+protected:
+};
 
 #endif
