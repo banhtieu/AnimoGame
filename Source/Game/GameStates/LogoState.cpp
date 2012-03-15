@@ -23,7 +23,7 @@ void LogoState::Render(Graphics2D *g)
 
 void LogoState::Update()
 {
-  if (TouchManager::GetInstance()->IsTouchInRect(0, 0, SCREEN_W, SCREEN_H))
+  if (TouchManager::GetInstance()->IsTouchUpInRect(0, 0, SCREEN_W, SCREEN_H))
   {
     Application::GetInstance()->SwitchState(new MainMenuState());
   }

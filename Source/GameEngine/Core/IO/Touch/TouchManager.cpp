@@ -67,6 +67,8 @@ bool TouchManager::IsTouchUpInRect(int x, int y, int w, int h)
   {
     if ((*item)->IsInRect(x, y, w, h) && (*item)->IsJustUp())
     {
+      touches->erase(item);
+      delete *item;
       return true;
     };
   }
