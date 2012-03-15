@@ -11,6 +11,8 @@
 Application::Application():currentState(0)
 {
   new TouchManager();
+  curLanguage = 0;
+  isSoundOn = true;
 };
 
 Application::~Application()

@@ -61,15 +61,49 @@ void MainMenuState::Render(Graphics2D *g)
   
   for( int i=0; i<NUM_MENU; i++)
   {
-    if(menuList[i]->isTouching())
+     if(menuList[i]->isPressed())
     {
-      menuSprite->DrawModule(menuList[i]->id + 1, menuList[i]->x, menuList[i]->y);
+      switch (menuList[i]->id) {
+        case M_SOUND_BTN_ON:
+          Application::GetInstance()->isSoundOn = false;
+          menuList[i]->id = M_SOUND_BTN_OFF;
+          menuSprite->DrawModule(menuList[i]->id, menuList[i]->x, menuList[i]->y); 
+          break;
+        case M_SOUND_BTN_OFF:
+          Application::GetInstance()->isSoundOn = true;
+          menuList[i]->id = M_SOUND_BTN_ON;
+          menuSprite->DrawModule(menuList[i]->id , menuList[i]->x, menuList[i]->y); 
+          break;
+        case M_EN_LANG_BTN:
+          Application::GetInstance()->curLanguage = 0;
+          break;
+        case M_VN_LANG_BTN:
+          Application::GetInstance()->curLanguage = 1;
+          break;
+        default:
+          break;
+      }
     }
+    else if(menuList[i]->isTouching())
+    {
+        menuSprite->DrawModule(menuList[i]->id + 1, menuList[i]->x, menuList[i]->y);      
+    }
+    
     else
     {
+      
       menuSprite->DrawModule(menuList[i]->id, menuList[i]->x, menuList[i]->y);
+      if(Application::GetInstance()->curLanguage == 0)
+      {
+        menuSprite->DrawModule(menuList[4]->id + 1, menuList[4]->x, menuList[4]->y);
+      }
+      else {
+        menuSprite->DrawModule(menuList[5]->id + 1, menuList[5]->x, menuList[5]->y);
+      }
     }
+    
   }
+  
   
   for(int i=0; i<3; i++)
   {

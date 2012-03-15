@@ -12,7 +12,8 @@
 
 bool MenuInstance::isPressed()
 {
-  if (TouchManager::GetInstance()->IsTouchInRect(x, y, w, h))
+  //if (TouchManager::GetInstance()->IsTouchInRect(x, y, w, h))
+  if (TouchManager::GetInstance()->IsTouchUpInRect(x, y, w, h))
   {
     return true;    
   }

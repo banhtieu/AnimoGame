@@ -25,6 +25,9 @@ protected:
   State *currentState;
 public:
   TouchScreenBase*		m_touchScreen;
+  
+  int curLanguage; //en:0 vn:1
+  bool isSoundOn;
 };
 
 #endif
