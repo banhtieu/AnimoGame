@@ -10,7 +10,7 @@
 #include "MainMenuState.h"
 #include "MenuBar.h"
 #include "ExportedStrings.h"
-
+#include "InGameState.h"
 void MainMenuState::Init()
 {
   bgSprite = new Sprite();
@@ -80,6 +80,8 @@ void MainMenuState::Render(Graphics2D *g)
         case M_VN_LANG_BTN:
           Application::GetInstance()->curLanguage = 1;
           break;
+        case M_PLAY_BTN:
+          Application::GetInstance()->SwitchState(new InGameState());
         default:
           break;
       }
