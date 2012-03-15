@@ -76,7 +76,6 @@
 		3781E30E14F5415D006E426E /* pngwrite.c in Sources */ = {isa = PBXBuildFile; fileRef = 3781E2FF14F5415D006E426E /* pngwrite.c */; };
 		3781E30F14F5415D006E426E /* pngwtran.c in Sources */ = {isa = PBXBuildFile; fileRef = 3781E30014F5415D006E426E /* pngwtran.c */; };
 		3781E31014F5415D006E426E /* pngwutil.c in Sources */ = {isa = PBXBuildFile; fileRef = 3781E30114F5415D006E426E /* pngwutil.c */; };
-		378E33E2150E543B00F72E9B /* Splash.bin in Resources */ = {isa = PBXBuildFile; fileRef = 378E33E1150E543B00F72E9B /* Splash.bin */; };
 		37D6F22B14FFC1CC00008965 /* Sprite.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37D6F22A14FFC1CC00008965 /* Sprite.cpp */; };
 		37EBD97D150B607600EE9561 /* StringManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37EBD97C150B607600EE9561 /* StringManager.cpp */; };
 		37F6F3EC14F530B00028EDC4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37F6F3EB14F530B00028EDC4 /* UIKit.framework */; };
@@ -90,7 +89,6 @@
 		37F6F40D14F530B00028EDC4 /* ViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 37F6F40B14F530B00028EDC4 /* ViewController_iPad.xib */; };
 		37F6F42E14F532C70028EDC4 /* MyGame.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37F6F42B14F532C70028EDC4 /* MyGame.cpp */; };
 		C35535AB150E6D74007D4774 /* MainMenuState.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C35535AA150E6D74007D4774 /* MainMenuState.cpp */; };
-		C35535AF150E6FF1007D4774 /* MainMenuBG.bin in Resources */ = {isa = PBXBuildFile; fileRef = C35535AE150E6FF1007D4774 /* MainMenuBG.bin */; };
 		C364976414F68E2200E4630A /* LogoState.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C364976214F68E2200E4630A /* LogoState.cpp */; };
 		C399353714FE613200AA4169 /* Application.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C399351614FE613200AA4169 /* Application.cpp */; };
 		C399353814FE613200AA4169 /* Device.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C399351914FE613200AA4169 /* Device.cpp */; };
@@ -105,12 +103,14 @@
 		C399354114FE613200AA4169 /* WinDevice.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C399353514FE613200AA4169 /* WinDevice.cpp */; };
 		C3AAF3BA1503D75F006BDB33 /* ItemInstance.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C3AAF3B91503D75F006BDB33 /* ItemInstance.cpp */; };
 		C3AAF3C11503DD1F006BDB33 /* ItemInventory.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C3AAF3C01503DD1F006BDB33 /* ItemInventory.cpp */; };
-		C3B9A3C3150F8F680095AE45 /* MenuBar.bin in Resources */ = {isa = PBXBuildFile; fileRef = C3B9A3C2150F8F680095AE45 /* MenuBar.bin */; };
 		C3B9A3C9150F9B8C0095AE45 /* MenuInstance.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C3B9A3C8150F9B8C0095AE45 /* MenuInstance.cpp */; };
 		C3BDD619150E383C0036ECA4 /* tinystr.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C3BDD613150E383C0036ECA4 /* tinystr.cpp */; };
 		C3BDD61A150E383C0036ECA4 /* tinyxml.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C3BDD615150E383C0036ECA4 /* tinyxml.cpp */; };
 		C3BDD61B150E383C0036ECA4 /* tinyxmlerror.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C3BDD617150E383C0036ECA4 /* tinyxmlerror.cpp */; };
 		C3BDD61C150E383C0036ECA4 /* tinyxmlparser.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C3BDD618150E383C0036ECA4 /* tinyxmlparser.cpp */; };
+		C3EB35AA151101BD0053ED9C /* MenuBar..bin in Resources */ = {isa = PBXBuildFile; fileRef = C3EB35A7151101BD0053ED9C /* MenuBar..bin */; };
+		C3EB35AB151101BD0053ED9C /* MenuMenuBG..bin in Resources */ = {isa = PBXBuildFile; fileRef = C3EB35A8151101BD0053ED9C /* MenuMenuBG..bin */; };
+		C3EB35AC151101BD0053ED9C /* Splash..bin in Resources */ = {isa = PBXBuildFile; fileRef = C3EB35A9151101BD0053ED9C /* Splash..bin */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -240,8 +240,6 @@
 		3781E2FF14F5415D006E426E /* pngwrite.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = pngwrite.c; sourceTree = "<group>"; };
 		3781E30014F5415D006E426E /* pngwtran.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = pngwtran.c; sourceTree = "<group>"; };
 		3781E30114F5415D006E426E /* pngwutil.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = pngwutil.c; sourceTree = "<group>"; };
-		378E33E1150E543B00F72E9B /* Splash.bin */ = {isa = PBXFileReference; lastKnownFileType = archive.macbinary; name = Splash.bin; path = ../../../Binary/Splash.bin; sourceTree = "<group>"; };
-		378E33E3150E546A00F72E9B /* Splash.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Splash.h; path = ../../../Source/Game/Generated/Splash.h; sourceTree = "<group>"; };
 		37D5EBE114F68D4400ECF83F /* BackgroundData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BackgroundData.h; path = ../../../Source/Game/BackgroundData.h; sourceTree = "<group>"; };
 		37D6F22814FFBA2600008965 /* Sprite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Sprite.h; sourceTree = "<group>"; };
 		37D6F22A14FFC1CC00008965 /* Sprite.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Sprite.cpp; sourceTree = "<group>"; };
@@ -264,7 +262,6 @@
 		37FFAD3E150C7E8000571DA1 /* ExportedStrings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ExportedStrings.h; path = ../../../Source/Game/Generated/ExportedStrings.h; sourceTree = "<group>"; };
 		C35535AA150E6D74007D4774 /* MainMenuState.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MainMenuState.cpp; sourceTree = "<group>"; };
 		C35535AC150E6D80007D4774 /* MainMenuState.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainMenuState.h; sourceTree = "<group>"; };
-		C35535AE150E6FF1007D4774 /* MainMenuBG.bin */ = {isa = PBXFileReference; lastKnownFileType = archive.macbinary; name = MainMenuBG.bin; path = ../../../Binary/MainMenuBG.bin; sourceTree = "<group>"; };
 		C364976214F68E2200E4630A /* LogoState.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = LogoState.cpp; sourceTree = "<group>"; };
 		C364976314F68E2200E4630A /* LogoState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LogoState.h; sourceTree = "<group>"; };
 		C399351614FE613200AA4169 /* Application.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Application.cpp; sourceTree = "<group>"; };
@@ -298,9 +295,6 @@
 		C3AAF3BC1503D784006BDB33 /* ItemInstance.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ItemInstance.h; sourceTree = "<group>"; };
 		C3AAF3C01503DD1F006BDB33 /* ItemInventory.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ItemInventory.cpp; sourceTree = "<group>"; };
 		C3AAF3C21503DD29006BDB33 /* ItemInventory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ItemInventory.h; sourceTree = "<group>"; };
-		C3B9A3BF150F8E0D0095AE45 /* MainMenuBG.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MainMenuBG.h; path = ../../../Source/Game/Generated/MainMenuBG.h; sourceTree = "<group>"; };
-		C3B9A3C0150F8E0D0095AE45 /* MenuBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MenuBar.h; path = ../../../Source/Game/Generated/MenuBar.h; sourceTree = "<group>"; };
-		C3B9A3C2150F8F680095AE45 /* MenuBar.bin */ = {isa = PBXFileReference; lastKnownFileType = archive.macbinary; name = MenuBar.bin; path = ../../../Binary/MenuBar.bin; sourceTree = "<group>"; };
 		C3B9A3C8150F9B8C0095AE45 /* MenuInstance.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MenuInstance.cpp; sourceTree = "<group>"; };
 		C3B9A3CA150F9B9D0095AE45 /* MenuInstance.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuInstance.h; sourceTree = "<group>"; };
 		C3BDD613150E383C0036ECA4 /* tinystr.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = tinystr.cpp; path = ../../Library/tinyXml/tinystr.cpp; sourceTree = "<group>"; };
@@ -309,6 +303,12 @@
 		C3BDD616150E383C0036ECA4 /* tinyxml.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = tinyxml.h; path = ../../Library/tinyXml/tinyxml.h; sourceTree = "<group>"; };
 		C3BDD617150E383C0036ECA4 /* tinyxmlerror.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = tinyxmlerror.cpp; path = ../../Library/tinyXml/tinyxmlerror.cpp; sourceTree = "<group>"; };
 		C3BDD618150E383C0036ECA4 /* tinyxmlparser.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = tinyxmlparser.cpp; path = ../../Library/tinyXml/tinyxmlparser.cpp; sourceTree = "<group>"; };
+		C3EB35A0151100A30053ED9C /* MenuBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MenuBar.h; path = ../../../Source/Game/Generated/MenuBar.h; sourceTree = "<group>"; };
+		C3EB35A1151100A30053ED9C /* MenuMenuBG.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MenuMenuBG.h; path = ../../../Source/Game/Generated/MenuMenuBG.h; sourceTree = "<group>"; };
+		C3EB35A2151100A30053ED9C /* Splash.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Splash.h; path = ../../../Source/Game/Generated/Splash.h; sourceTree = "<group>"; };
+		C3EB35A7151101BD0053ED9C /* MenuBar..bin */ = {isa = PBXFileReference; lastKnownFileType = archive.macbinary; name = MenuBar..bin; path = ../../../Binary/MenuBar..bin; sourceTree = "<group>"; };
+		C3EB35A8151101BD0053ED9C /* MenuMenuBG..bin */ = {isa = PBXFileReference; lastKnownFileType = archive.macbinary; name = MenuMenuBG..bin; path = ../../../Binary/MenuMenuBG..bin; sourceTree = "<group>"; };
+		C3EB35A9151101BD0053ED9C /* Splash..bin */ = {isa = PBXFileReference; lastKnownFileType = archive.macbinary; name = Splash..bin; path = ../../../Binary/Splash..bin; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -543,9 +543,9 @@
 		37D6F22C14FFCD2300008965 /* Generated */ = {
 			isa = PBXGroup;
 			children = (
-				C3B9A3BF150F8E0D0095AE45 /* MainMenuBG.h */,
-				C3B9A3C0150F8E0D0095AE45 /* MenuBar.h */,
-				378E33E3150E546A00F72E9B /* Splash.h */,
+				C3EB35A0151100A30053ED9C /* MenuBar.h */,
+				C3EB35A1151100A30053ED9C /* MenuMenuBG.h */,
+				C3EB35A2151100A30053ED9C /* Splash.h */,
 				37FFAD3E150C7E8000571DA1 /* ExportedStrings.h */,
 			);
 			name = Generated;
@@ -608,9 +608,9 @@
 		37F6F42414F532580028EDC4 /* Binary */ = {
 			isa = PBXGroup;
 			children = (
-				C3B9A3C2150F8F680095AE45 /* MenuBar.bin */,
-				378E33E1150E543B00F72E9B /* Splash.bin */,
-				C35535AE150E6FF1007D4774 /* MainMenuBG.bin */,
+				C3EB35A7151101BD0053ED9C /* MenuBar..bin */,
+				C3EB35A8151101BD0053ED9C /* MenuMenuBG..bin */,
+				C3EB35A9151101BD0053ED9C /* Splash..bin */,
 				37619982150B8E20003B400F /* strings.en.bin */,
 				37619983150B8E20003B400F /* strings.vi.bin */,
 				3781E2E314F53F88006E426E /* Shader.fsh */,
@@ -864,9 +864,9 @@
 				37F6F40D14F530B00028EDC4 /* ViewController_iPad.xib in Resources */,
 				37619984150B8E20003B400F /* strings.en.bin in Resources */,
 				37619985150B8E20003B400F /* strings.vi.bin in Resources */,
-				378E33E2150E543B00F72E9B /* Splash.bin in Resources */,
-				C35535AF150E6FF1007D4774 /* MainMenuBG.bin in Resources */,
-				C3B9A3C3150F8F680095AE45 /* MenuBar.bin in Resources */,
+				C3EB35AA151101BD0053ED9C /* MenuBar..bin in Resources */,
+				C3EB35AB151101BD0053ED9C /* MenuMenuBG..bin in Resources */,
+				C3EB35AC151101BD0053ED9C /* Splash..bin in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

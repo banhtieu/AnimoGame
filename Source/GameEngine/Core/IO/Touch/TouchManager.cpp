@@ -72,6 +72,18 @@ bool TouchManager::IsTouchUpInRect(int x, int y, int w, int h)
   }
   return false;
 }
+
+bool TouchManager::IsTouchMovingInRect(int x, int y, int w, int h)
+{
+  for (TouchList::iterator item = touches->begin(); item != touches->end(); item++)
+  {
+    if ((*item)->IsInRect(x, y, w, h) && (*item)->IsMoving())
+    {
+      return true;
+    };
+  }
+  return false;
+}
 // Add Touch
 void TouchManager::AddTouch(int touchId, int x, int y, int type)
 {

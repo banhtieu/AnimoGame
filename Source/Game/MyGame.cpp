@@ -12,7 +12,8 @@
 #include <Box2D/Box2D.h>
 void MyGame::Init()
 {
-  SwitchState(new InGameState());
+  //SwitchState(new InGameState());
+  SwitchState(new LogoState());
 }
 
 

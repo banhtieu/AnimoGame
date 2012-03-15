@@ -78,3 +78,8 @@ bool Touch::IsJustUp()
   return data.type == TOUCH_UP;
 }
 
+bool Touch::IsMoving()
+{
+  return data.type = TOUCH_MOVE;
+}
+

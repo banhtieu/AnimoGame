@@ -21,7 +21,7 @@ bool MenuInstance::isPressed()
 
 bool MenuInstance::isTouching()
 {
-  if (TouchManager::GetInstance()->IsTouchDownInRect(x, y, w, h))
+  if (TouchManager::GetInstance()->IsTouchDownInRect(x, y, w, h) || TouchManager::GetInstance()->IsTouchMovingInRect(x, y, w, h))
   {
     return true;
   }
