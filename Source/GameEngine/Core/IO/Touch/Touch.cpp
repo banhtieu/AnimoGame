@@ -50,13 +50,17 @@ int Touch::GetTouchId()
 // Get Delta X
 int Touch::GetDeltaX()
 {
-  return data.x - lastData.x;
+  int value = data.x - lastData.x;
+  lastData.x = data.x;
+  return value;
 }
 
 // Get Delta Y
 int Touch::GetDeltaY()
 {
-  return data.y - lastData.y;
+  int value = data.y - lastData.y;
+  lastData.y = data.y;
+  return value;
 }
 
 // Check if Touch is Int Rectangle

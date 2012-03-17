@@ -10,6 +10,21 @@
 #define AnimoGame_InGameState_h
 
 #include "Engine.h"
+#include <vector>
+
+using namespace std;
+
+/**
+ * Animal
+ **/
+class Animal
+{
+public:
+  int x;
+  int y;
+  int animal;
+  Animal(int animal_, int x_, int y_):animal(animal_), x(x_), y(y_) {};
+};
 
 /**
  * The In Game State 
@@ -21,8 +36,19 @@ public:
   void Update();
   void Render(Graphics2D *g);
   void Free();
+  void DrawAnimal(int animal, int x, int y);
 protected:
-  Sprite *animals;
+  Sprite *animalSprite;
+  int gameSpeed;
+  int gameTime;
+  int rightest;
+  
+  vector<Animal> animals;
+  Animal *selectedAnimal;
+  
+  int oldX;
+  int oldY;
+
 };
 
 #endif

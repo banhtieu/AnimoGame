@@ -7,14 +7,25 @@
 //
 
 #include "InGameState.h"
+#include "Animals.h"
+
+#define ANIMAL_WIDTH 120
+#define MAX_ANIMALS 6
+#define ANIMAL_Y SCREEN_H - ANIMAL_WIDTH / 2 - 10
 
 /**
  * Init The In Game State
  **/
 void InGameState::Init()
 {
-  animals = new Sprite();
-  animals->LoadSprite("Animals");
+  animalSprite = new Sprite();
+  animalSprite->LoadSprite("Animals");
+  
+  animals.clear();
+  srand(time(NULL));
+  gameTime = 0;
+  rightest = SCREEN_W + ANIMAL_WIDTH / 2;
+  selectedAnimal = NULL;
 }
 
 
@@ -23,7 +34,67 @@ void InGameState::Init()
  **/
 void InGameState::Update()
 {
+  TouchManager *touchManager = TouchManager::GetInstance();
+  if (!selectedAnimal)
+  {
+    if (touchManager->HasNewTouch())
+    {
+      for (int i = 0; i < animals.size(); i++)
+      {
+        // get touched animal;
+        if (touchManager->IsTouchDownInRect(animals[i].x - ANIMAL_WIDTH / 2, animals[i].y - ANIMAL_WIDTH / 2, ANIMAL_WIDTH, ANIMAL_WIDTH))
+        {
+          selectedAnimal = new Animal(animals[i]);
+          Touch *touch = touchManager->GetFirstTouch();
+          if (touch)
+          {
+            oldX = touch->GetX();
+            oldY = touch->GetY();
+          }
+          break;
+        }
+      }
+    }
+  }
+  else
+  {
+    Touch *touch = touchManager->GetFirstTouch();
+    if (touch)
+    {
+      selectedAnimal->x += touch->GetX() - oldX;
+      selectedAnimal->y += touch->GetY() - oldY;
+      oldX = touch->GetX();
+      oldY = touch->GetY();
+      
+      LOGI("X:%d, Y:%d", selectedAnimal->x, selectedAnimal->y);
+    }
+    else 
+    {
+      selectedAnimal = NULL;
+    }
+  }
   
+  if (gameTime % 100 == 0)
+  {
+    animals.push_back(Animal(rand() % MAX_ANIMALS, -ANIMAL_WIDTH, ANIMAL_Y));
+  }
+  
+  for (int i = 0; i < animals.size(); i++)
+  {
+    int limit = rightest;
+    
+    if (i > 0)
+    {
+      limit = animals[i - 1].x;
+    }
+    
+    if (animals[i].x + ANIMAL_WIDTH + 5 < limit)
+    {
+      animals[i].x += 5;
+    }
+  }
+  
+  gameTime++;
 }
 
 
@@ -32,10 +103,13 @@ void InGameState::Update()
  **/
 void InGameState::Render(Graphics2D *g)
 {
-  g->SetColor(Color(1.0f, 0.0f, 0.0f, 1.0f));
-  for (int i = 0; i < 6; i++)
+  for (vector<Animal>::iterator i = animals.begin(); i < animals.end(); i++)
   {
-    animals->DrawModule(i, i * 105, 10);
+    DrawAnimal((*i).animal, (*i).x, (*i).y);  
+  }
+  if (selectedAnimal)
+  {
+    DrawAnimal(selectedAnimal->animal, selectedAnimal->x, selectedAnimal->y);
   }
 }
 
@@ -45,5 +119,16 @@ void InGameState::Render(Graphics2D *g)
  **/
 void InGameState::Free()
 {
-  
+  SAFE_DEL(animalSprite);
+}
+
+/**
+ * draw an animal
+ **/
+void InGameState::DrawAnimal(int animal, int x, int y)
+{
+  Graphics2D *g = Graphics2D::GetInstance();
+  g->SetColor(Color(0xffff0000));
+  g->DrawRectangle(x - ANIMAL_WIDTH / 2, y - ANIMAL_WIDTH / 2, ANIMAL_WIDTH, ANIMAL_WIDTH);
+  animalSprite->DrawModule(animal, x - animalSprite->GetModuleWidth(animal) / 2, y - animalSprite->GetModuleHeight(animal) / 2);
 }

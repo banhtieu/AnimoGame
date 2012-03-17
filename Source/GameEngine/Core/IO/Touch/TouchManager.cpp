@@ -30,12 +30,31 @@ TouchList* TouchManager::GetTouches()
   return touches;
 }
 
+// Get Touches
+Touch* TouchManager::GetFirstTouch()
+{
+  return *touches->begin();
+}
+
 // Get Number of Touches
 int TouchManager::GetNumberOfTouches()
 {
   return touches->size();
 }
 
+
+// Check any touch in Rectangle
+bool TouchManager::HasNewTouch()
+{
+  for (TouchList::iterator item = touches->begin(); item != touches->end(); item++)
+  {
+    if ((*item)->IsJustTouch())
+    {
+      return true;
+    };
+  }
+  return false;
+}
 
 // Check any touch in Rectangle
 bool TouchManager::IsTouchInRect(int x, int y, int w, int h)
