@@ -22,6 +22,7 @@ public:
   void Render(Graphics2D *g);
   void Free();
 protected:
+  Sprite *animals;
 };
 
 #endif

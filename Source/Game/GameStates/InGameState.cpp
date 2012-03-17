@@ -13,7 +13,8 @@
  **/
 void InGameState::Init()
 {
-  
+  animals = new Sprite();
+  animals->LoadSprite("Animals");
 }
 
 
@@ -32,11 +33,9 @@ void InGameState::Update()
 void InGameState::Render(Graphics2D *g)
 {
   g->SetColor(Color(1.0f, 0.0f, 0.0f, 1.0f));
-  g->DrawLine(0, SCREEN_H - 160, SCREEN_W, SCREEN_H - 160);
-  g->SetColor(Color(0.0f, 0.0f, 0.0f, 1.0f));
-  for (int i = 0; i <= 4; i++)
+  for (int i = 0; i < 6; i++)
   {
-    g->DrawRectangle(160 * i + 5, SCREEN_H - 155, 150, 150);
+    animals->DrawModule(i, i * 105, 10);
   }
 }
 

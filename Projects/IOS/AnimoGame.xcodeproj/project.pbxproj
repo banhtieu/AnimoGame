@@ -76,6 +76,7 @@
 		3781E30E14F5415D006E426E /* pngwrite.c in Sources */ = {isa = PBXBuildFile; fileRef = 3781E2FF14F5415D006E426E /* pngwrite.c */; };
 		3781E30F14F5415D006E426E /* pngwtran.c in Sources */ = {isa = PBXBuildFile; fileRef = 3781E30014F5415D006E426E /* pngwtran.c */; };
 		3781E31014F5415D006E426E /* pngwutil.c in Sources */ = {isa = PBXBuildFile; fileRef = 3781E30114F5415D006E426E /* pngwutil.c */; };
+		37D6115B151481B000047978 /* Animals.bin in Resources */ = {isa = PBXBuildFile; fileRef = 37D6115A151481B000047978 /* Animals.bin */; };
 		37D6F22B14FFC1CC00008965 /* Sprite.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37D6F22A14FFC1CC00008965 /* Sprite.cpp */; };
 		37EBD97D150B607600EE9561 /* StringManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37EBD97C150B607600EE9561 /* StringManager.cpp */; };
 		37F6F3EC14F530B00028EDC4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37F6F3EB14F530B00028EDC4 /* UIKit.framework */; };
@@ -101,8 +102,6 @@
 		C399353F14FE613200AA4169 /* ViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = C399353214FE613200AA4169 /* ViewController.mm */; };
 		C399354014FE613200AA4169 /* WinApplication.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C399353414FE613200AA4169 /* WinApplication.cpp */; };
 		C399354114FE613200AA4169 /* WinDevice.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C399353514FE613200AA4169 /* WinDevice.cpp */; };
-		C3AAF3BA1503D75F006BDB33 /* ItemInstance.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C3AAF3B91503D75F006BDB33 /* ItemInstance.cpp */; };
-		C3AAF3C11503DD1F006BDB33 /* ItemInventory.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C3AAF3C01503DD1F006BDB33 /* ItemInventory.cpp */; };
 		C3B9A3C9150F9B8C0095AE45 /* MenuInstance.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C3B9A3C8150F9B8C0095AE45 /* MenuInstance.cpp */; };
 		C3BDD619150E383C0036ECA4 /* tinystr.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C3BDD613150E383C0036ECA4 /* tinystr.cpp */; };
 		C3BDD61A150E383C0036ECA4 /* tinyxml.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C3BDD615150E383C0036ECA4 /* tinyxml.cpp */; };
@@ -243,6 +242,8 @@
 		3781E30014F5415D006E426E /* pngwtran.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = pngwtran.c; sourceTree = "<group>"; };
 		3781E30114F5415D006E426E /* pngwutil.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = pngwutil.c; sourceTree = "<group>"; };
 		37D5EBE114F68D4400ECF83F /* BackgroundData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BackgroundData.h; path = ../../../Source/Game/BackgroundData.h; sourceTree = "<group>"; };
+		37D6115A151481B000047978 /* Animals.bin */ = {isa = PBXFileReference; lastKnownFileType = archive.macbinary; name = Animals.bin; path = ../../../Binary/Animals.bin; sourceTree = "<group>"; };
+		37D6115D151481CD00047978 /* Animals.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Animals.h; path = ../../../Source/Game/Generated/Animals.h; sourceTree = "<group>"; };
 		37D6F22814FFBA2600008965 /* Sprite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Sprite.h; sourceTree = "<group>"; };
 		37D6F22A14FFC1CC00008965 /* Sprite.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Sprite.cpp; sourceTree = "<group>"; };
 		37EBD97A150B5D6000EE9561 /* StringManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StringManager.h; sourceTree = "<group>"; };
@@ -293,10 +294,6 @@
 		C399353614FE613200AA4169 /* WinDevice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WinDevice.h; sourceTree = "<group>"; };
 		C399354814FFB86300AA4169 /* Point2D.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Point2D.h; sourceTree = "<group>"; };
 		C399354914FFC38F00AA4169 /* Rect2D.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Rect2D.h; sourceTree = "<group>"; };
-		C3AAF3B91503D75F006BDB33 /* ItemInstance.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ItemInstance.cpp; sourceTree = "<group>"; };
-		C3AAF3BC1503D784006BDB33 /* ItemInstance.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ItemInstance.h; sourceTree = "<group>"; };
-		C3AAF3C01503DD1F006BDB33 /* ItemInventory.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ItemInventory.cpp; sourceTree = "<group>"; };
-		C3AAF3C21503DD29006BDB33 /* ItemInventory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ItemInventory.h; sourceTree = "<group>"; };
 		C3B9A3C8150F9B8C0095AE45 /* MenuInstance.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MenuInstance.cpp; sourceTree = "<group>"; };
 		C3B9A3CA150F9B9D0095AE45 /* MenuInstance.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuInstance.h; sourceTree = "<group>"; };
 		C3BDD613150E383C0036ECA4 /* tinystr.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = tinystr.cpp; path = ../../Library/tinyXml/tinystr.cpp; sourceTree = "<group>"; };
@@ -547,6 +544,7 @@
 		37D6F22C14FFCD2300008965 /* Generated */ = {
 			isa = PBXGroup;
 			children = (
+				37D6115D151481CD00047978 /* Animals.h */,
 				C3EB35A0151100A30053ED9C /* MenuBar.h */,
 				C3EB35A1151100A30053ED9C /* MenuMenuBG.h */,
 				C3EB35A2151100A30053ED9C /* Splash.h */,
@@ -614,6 +612,7 @@
 		37F6F42414F532580028EDC4 /* Binary */ = {
 			isa = PBXGroup;
 			children = (
+				37D6115A151481B000047978 /* Animals.bin */,
 				C3EB35A7151101BD0053ED9C /* MenuBar.bin */,
 				C3EB35A8151101BD0053ED9C /* MainMenuBG.bin */,
 				C3EB35A9151101BD0053ED9C /* Splash.bin */,
@@ -658,7 +657,6 @@
 			isa = PBXGroup;
 			children = (
 				C364976014F68DE400E4630A /* GameStates */,
-				C3AAF3B71503D6E0006BDB33 /* Items */,
 				37D6F22C14FFCD2300008965 /* Generated */,
 				37F6F42B14F532C70028EDC4 /* MyGame.cpp */,
 				37F6F42C14F532C70028EDC4 /* MyGame.h */,
@@ -801,18 +799,6 @@
 			path = Win32;
 			sourceTree = "<group>";
 		};
-		C3AAF3B71503D6E0006BDB33 /* Items */ = {
-			isa = PBXGroup;
-			children = (
-				C3AAF3B91503D75F006BDB33 /* ItemInstance.cpp */,
-				C3AAF3BC1503D784006BDB33 /* ItemInstance.h */,
-				C3AAF3C01503DD1F006BDB33 /* ItemInventory.cpp */,
-				C3AAF3C21503DD29006BDB33 /* ItemInventory.h */,
-			);
-			name = Items;
-			path = ../../../Source/Game/Items;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -839,7 +825,7 @@
 		37F6F3DE14F530B00028EDC4 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0420;
+				LastUpgradeCheck = 0430;
 			};
 			buildConfigurationList = 37F6F3E114F530B00028EDC4 /* Build configuration list for PBXProject "AnimoGame" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -875,6 +861,7 @@
 				C3EB35AC151101BD0053ED9C /* Splash.bin in Resources */,
 				C3CF01FE1512608800F4AFC5 /* Icon.png in Resources */,
 				C3CF01FF1512608800F4AFC5 /* Icon@2x.png in Resources */,
+				37D6115B151481B000047978 /* Animals.bin in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -961,8 +948,6 @@
 				372446EF1502232B00DA2202 /* b2WheelJoint.cpp in Sources */,
 				372446F01502232B00DA2202 /* b2Rope.cpp in Sources */,
 				372446FB15026A2C00DA2202 /* Actor.cpp in Sources */,
-				C3AAF3BA1503D75F006BDB33 /* ItemInstance.cpp in Sources */,
-				C3AAF3C11503DD1F006BDB33 /* ItemInventory.cpp in Sources */,
 				372FC5C1150519D8009376E0 /* Touch.cpp in Sources */,
 				372FC5C2150519D8009376E0 /* TouchManager.cpp in Sources */,
 				37EBD97D150B607600EE9561 /* StringManager.cpp in Sources */,
