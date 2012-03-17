@@ -20,6 +20,7 @@ public:
   virtual void Free();
 protected:
   Sprite *splashSprite;
+  long timeStart;
 };
 
 #endif

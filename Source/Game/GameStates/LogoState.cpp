@@ -10,10 +10,13 @@
 //#include "BackgroundData.h"
 #include "Splash.h"
 #include "MainMenuState.h"
+#define LOGO_TIME 3
+
 void LogoState::Init()
 {
   splashSprite = new Sprite();
   splashSprite->LoadSprite("Splash");
+  timeStart = time(NULL);
 }
 
 void LogoState::Render(Graphics2D *g)
@@ -23,7 +26,7 @@ void LogoState::Render(Graphics2D *g)
 
 void LogoState::Update()
 {
-  if (TouchManager::GetInstance()->IsTouchUpInRect(0, 0, SCREEN_W, SCREEN_H))
+  if (time(NULL) - timeStart > LOGO_TIME)
   {
     Application::GetInstance()->SwitchState(new MainMenuState());
   }
