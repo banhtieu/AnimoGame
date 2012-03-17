@@ -11,7 +11,7 @@
 
 #include "Engine.h"
 
-#define NUM_MENU 2
+#define NUM_MENU 5
 class MainMenuState: public State, Singleton<MainMenuState>
 {
 public:
@@ -27,6 +27,9 @@ protected:
   MenuInstance *menuList[NUM_MENU];
   
   int playX, playY;
+  int oldX, oldY;
+  int aX;
+  int selecting;
 };
 
 

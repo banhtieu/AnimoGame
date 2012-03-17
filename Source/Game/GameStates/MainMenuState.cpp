@@ -27,31 +27,35 @@ void MainMenuState::Init()
   
   numMenuItems = 0;
   
-  //achivement button
-  menuList[numMenuItems] = new MenuInstance(200, 595, menuSprite->GetModuleWidth(M_OPTION), menuSprite->GetModuleHeight(M_OPTION));
+  // Options
+  menuList[numMenuItems] = new MenuInstance((SCREEN_W - menuSprite->GetModuleWidth(M_OPTION)) >> 1, 595, menuSprite->GetModuleWidth(M_OPTION), menuSprite->GetModuleHeight(M_OPTION));
   menuList[numMenuItems++]->id = M_OPTION;
   
-  // menu options
-  menuList[numMenuItems] = new MenuInstance(155, 655,menuSprite->GetModuleWidth(M_ABOUT_US), menuSprite->GetModuleHeight(M_ABOUT_US));
+  // About Us
+  menuList[numMenuItems] = new MenuInstance((SCREEN_W - menuSprite->GetModuleWidth(M_ABOUT_US))  >> 1, 660, menuSprite->GetModuleWidth(M_ABOUT_US), menuSprite->GetModuleHeight(M_ABOUT_US));
   menuList[numMenuItems++]->id = M_ABOUT_US;
 
-  // menu options
-  menuList[numMenuItems] = new MenuInstance(155, 655, menuSprite->GetModuleWidth(M_ABOUT_US), menuSprite->GetModuleHeight(M_ABOUT_US));
-  menuList[numMenuItems++]->id = M_ABOUT_US;
+  menuList[numMenuItems] = new MenuInstance((SCREEN_W - menuSprite->GetModuleWidth(M_ACHIEVEMENTS)) >> 1, 732, menuSprite->GetModuleWidth(M_ACHIEVEMENTS), menuSprite->GetModuleHeight(M_ACHIEVEMENTS));
+  menuList[numMenuItems++]->id = M_ACHIEVEMENTS;
 
-
-/*  menuList[numMenuItems] = new MenuInstance(90, 732, menuSprite->GetModuleWidth(M_ACHIEVEMENTS), menuSprite->GetModuleHeight(M_ACHIEVEMENTS));
-  menuList[numMenuItems]->id = M_ACHIEVEMENTS; */
-
-  playX = 25;
+  playX = 20;
   playY = 430;
 
-  
+  selecting = 0;
 }
 
 void MainMenuState::Render(Graphics2D *g)
 {
+  static int blink = 0;
+  blink = (blink + 1) % 10;
+  
   bgSprite->DrawModule(0, 0, 0);
+  menuSprite->DrawModule(M_ANIMAL_PLAY_SHADOW, SCREEN_W - 30 -  menuSprite->GetModuleWidth(M_ANIMAL_PLAY_SHADOW), 430);
+  
+  menuSprite->DrawModule(M_SLIDE_TO_PLAY + ((blink > 5) ? 0 : 1), (SCREEN_W - menuSprite->GetModuleWidth(M_SLIDE_TO_PLAY)) >> 1, 480);
+  
+  menuSprite->DrawModule(M_SHADOW, 15, 435);
+  menuSprite->DrawModule(M_ANIMAL_PLAY, playX, playY);
   
   for( int i = 0; i < numMenuItems; i++)
   {
@@ -79,9 +83,56 @@ void MainMenuState::Render(Graphics2D *g)
 
 void MainMenuState::Update()
 {
-  if (TouchManager::GetInstance()->IsTouchInRect(0, 0, SCREEN_W, SCREEN_H))
+  TouchManager *touchManager = TouchManager::GetInstance();
+  if (!selecting)
   {
+    if (touchManager->IsTouchDownInRect(playX, playY, menuSprite->GetModuleWidth(M_ANIMAL_PLAY), menuSprite->GetModuleHeight(M_ANIMAL_PLAY)))
+    {
+      selecting = true;
+      Touch *touch = touchManager->GetFirstTouch();
+      oldX = touch->GetX();
+      oldY = touch->GetY();
+      aX = 5;
+    }
     
+    if (playX > 20)
+    {
+      playX += aX;
+      aX-=3;
+    }
+
+    if (playX < 20)
+    {
+      playX = 20;
+    }
+
+  }
+  else 
+  {
+    Touch *touch = touchManager->GetFirstTouch();
+    if (touch)
+    {
+      if (playX < SCREEN_W - 30 -  menuSprite->GetModuleWidth(M_ANIMAL_PLAY_SHADOW))
+      {
+         playX += touch->GetX() - oldX; 
+      }
+      else 
+      {
+        playX = SCREEN_W - 30 -  menuSprite->GetModuleWidth(M_ANIMAL_PLAY_SHADOW);
+      }
+      //playY += touch->GetY() - oldY;
+      oldX = touch->GetX();
+      oldY = touch->GetY();
+    }
+    else 
+    {
+      selecting = false;
+      if (playX >= SCREEN_W - 30 -  menuSprite->GetModuleWidth(M_ANIMAL_PLAY_SHADOW))
+      {
+        Application::GetInstance()->SwitchState(new InGameState());
+      }
+    }
+
   }
 }
 
