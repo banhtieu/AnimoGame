@@ -12,7 +12,7 @@
 #include <stdio.h>
 
 // The Global Configurations are here.
-
+#define PLATFORM_OS 1
 #define SCREEN_W 640
 #define SCREEN_H 960
 #define SCREEN_WD2 (SCREEN_W >> 1)

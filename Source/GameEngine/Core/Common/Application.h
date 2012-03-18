@@ -21,6 +21,7 @@ public:
   virtual void Update();
   virtual void Free();
   virtual void SwitchState(State *newState);
+  long GetCurrentTime();// milisecond
 protected:
   State *currentState;
 public:

@@ -64,3 +64,13 @@ void Application::SwitchState(State *newState)
   currentState = newState;
   currentState->Init();
 }
+
+// Get current milisecond
+long Application::GetCurrentTime()
+{
+#ifdef PLATFORM_OS
+  return time(NULL);
+#else
+  return 0;
+#endif
+}

@@ -174,7 +174,7 @@
          endingColumnNumber = "9223372036854775807"
          startingLineNumber = "25"
          endingLineNumber = "25"
-         landmarkName = "LogoState::Update()"
+         landmarkName = "LogoState::Render(Graphics2D *g)"
          landmarkType = "5">
       </FileBreakpoint>
       <FileBreakpoint
@@ -186,9 +186,7 @@
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
          startingLineNumber = "26"
-         endingLineNumber = "26"
-         landmarkName = "LogoState::Update()"
-         landmarkType = "5">
+         endingLineNumber = "26">
       </FileBreakpoint>
       <FileBreakpoint
          shouldBeEnabled = "No"
@@ -343,7 +341,7 @@
          endingColumnNumber = "9223372036854775807"
          startingLineNumber = "98"
          endingLineNumber = "98"
-         landmarkName = "MainMenuState::Render(Graphics2D *g)"
+         landmarkName = "MainMenuState::Update()"
          landmarkType = "5">
       </FileBreakpoint>
       <FileBreakpoint
@@ -356,7 +354,7 @@
          endingColumnNumber = "9223372036854775807"
          startingLineNumber = "101"
          endingLineNumber = "101"
-         landmarkName = "MainMenuState::Render(Graphics2D *g)"
+         landmarkName = "MainMenuState::Update()"
          landmarkType = "5">
       </FileBreakpoint>
    </FileBreakpoints>

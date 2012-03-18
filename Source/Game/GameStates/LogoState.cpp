@@ -16,7 +16,7 @@ void LogoState::Init()
 {
   splashSprite = new Sprite();
   splashSprite->LoadSprite("Splash");
-  timeStart = time(NULL);
+  timeStart = Application::GetInstance()->GetCurrentTime();
 }
 
 void LogoState::Render(Graphics2D *g)
@@ -26,7 +26,7 @@ void LogoState::Render(Graphics2D *g)
 
 void LogoState::Update()
 {
-  if (time(NULL) - timeStart > LOGO_TIME)
+  if (Application::GetInstance()->GetCurrentTime()- timeStart > LOGO_TIME)
   {
     Application::GetInstance()->SwitchState(new MainMenuState());
   }
