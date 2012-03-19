@@ -29,7 +29,7 @@ protected:
   int playX, playY;
   int oldX, oldY;
   int aX;
-  int selecting;
+  bool selecting;
 };
 
 

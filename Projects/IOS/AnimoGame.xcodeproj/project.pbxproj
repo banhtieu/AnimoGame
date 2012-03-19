@@ -102,6 +102,10 @@
 		C399353F14FE613200AA4169 /* ViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = C399353214FE613200AA4169 /* ViewController.mm */; };
 		C399354014FE613200AA4169 /* WinApplication.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C399353414FE613200AA4169 /* WinApplication.cpp */; };
 		C399354114FE613200AA4169 /* WinDevice.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C399353514FE613200AA4169 /* WinDevice.cpp */; };
+		C3B8A1AC151611F800B61573 /* AboutState.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C3B8A1AB151611F800B61573 /* AboutState.cpp */; };
+		C3B8A1B01516144400B61573 /* OptionState.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C3B8A1AF1516144400B61573 /* OptionState.cpp */; };
+		C3B8A1BD1516187600B61573 /* MediaPlayerManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C3B8A1BC1516187600B61573 /* MediaPlayerManager.cpp */; };
+		C3B8A1C61516EAF600B61573 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3B8A1C51516EAF600B61573 /* AVFoundation.framework */; };
 		C3B9A3C9150F9B8C0095AE45 /* MenuInstance.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C3B9A3C8150F9B8C0095AE45 /* MenuInstance.cpp */; };
 		C3BDD619150E383C0036ECA4 /* tinystr.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C3BDD613150E383C0036ECA4 /* tinystr.cpp */; };
 		C3BDD61A150E383C0036ECA4 /* tinyxml.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C3BDD615150E383C0036ECA4 /* tinyxml.cpp */; };
@@ -294,6 +298,14 @@
 		C399353614FE613200AA4169 /* WinDevice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WinDevice.h; sourceTree = "<group>"; };
 		C399354814FFB86300AA4169 /* Point2D.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Point2D.h; sourceTree = "<group>"; };
 		C399354914FFC38F00AA4169 /* Rect2D.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Rect2D.h; sourceTree = "<group>"; };
+		C3B8A1AB151611F800B61573 /* AboutState.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = AboutState.cpp; sourceTree = "<group>"; };
+		C3B8A1AE1516120300B61573 /* AboutState.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AboutState.h; sourceTree = "<group>"; };
+		C3B8A1AF1516144400B61573 /* OptionState.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = OptionState.cpp; sourceTree = "<group>"; };
+		C3B8A1B11516145000B61573 /* OptionState.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OptionState.h; sourceTree = "<group>"; };
+		C3B8A1BC1516187600B61573 /* MediaPlayerManager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = MediaPlayerManager.cpp; path = MediaPlayer/MediaPlayerManager.cpp; sourceTree = "<group>"; };
+		C3B8A1BE1516188800B61573 /* MediaPlayerManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = MediaPlayerManager.h; path = MediaPlayer/MediaPlayerManager.h; sourceTree = "<group>"; };
+		C3B8A1BF1516E64900B61573 /* SoundPack.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = SoundPack.h; path = ../../../Source/Game/Generated/SoundPack.h; sourceTree = "<group>"; };
+		C3B8A1C51516EAF600B61573 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		C3B9A3C8150F9B8C0095AE45 /* MenuInstance.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MenuInstance.cpp; sourceTree = "<group>"; };
 		C3B9A3CA150F9B9D0095AE45 /* MenuInstance.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuInstance.h; sourceTree = "<group>"; };
 		C3BDD613150E383C0036ECA4 /* tinystr.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = tinystr.cpp; path = ../../Library/tinyXml/tinystr.cpp; sourceTree = "<group>"; };
@@ -317,6 +329,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C3B8A1C61516EAF600B61573 /* AVFoundation.framework in Frameworks */,
 				3781E2DF14F53A6E006E426E /* libz.dylib in Frameworks */,
 				37F6F3EC14F530B00028EDC4 /* UIKit.framework in Frameworks */,
 				37F6F3EE14F530B00028EDC4 /* Foundation.framework in Frameworks */,
@@ -549,6 +562,7 @@
 				C3EB35A1151100A30053ED9C /* MenuMenuBG.h */,
 				C3EB35A2151100A30053ED9C /* Splash.h */,
 				37FFAD3E150C7E8000571DA1 /* ExportedStrings.h */,
+				C3B8A1BF1516E64900B61573 /* SoundPack.h */,
 			);
 			name = Generated;
 			sourceTree = "<group>";
@@ -578,6 +592,7 @@
 				C36DE9E7150CD76600575EAD /* tinyXML */,
 				3724465F150222CD00DA2202 /* Box2D */,
 				3781E2EB14F5415D006E426E /* LIBPNG */,
+				C3B8A1C51516EAF600B61573 /* AVFoundation.framework */,
 				3781E2DE14F53A6E006E426E /* libz.dylib */,
 				37F6F3EB14F530B00028EDC4 /* UIKit.framework */,
 				37F6F3ED14F530B00028EDC4 /* Foundation.framework */,
@@ -674,6 +689,10 @@
 				C35535AC150E6D80007D4774 /* MainMenuState.h */,
 				3780825A1510D8C0005027EF /* InGameState.h */,
 				378082571510D8A8005027EF /* InGameState.cpp */,
+				C3B8A1AB151611F800B61573 /* AboutState.cpp */,
+				C3B8A1AE1516120300B61573 /* AboutState.h */,
+				C3B8A1AF1516144400B61573 /* OptionState.cpp */,
+				C3B8A1B11516145000B61573 /* OptionState.h */,
 			);
 			name = GameStates;
 			path = ../../../Source/Game/GameStates;
@@ -742,6 +761,7 @@
 		C399352314FE613200AA4169 /* IO */ = {
 			isa = PBXGroup;
 			children = (
+				C3B8A1BB151617B700B61573 /* MediaPlayer */,
 				372FC5BC150519D8009376E0 /* Touch */,
 				C399352414FE613200AA4169 /* FileSystem */,
 			);
@@ -797,6 +817,15 @@
 				C399353614FE613200AA4169 /* WinDevice.h */,
 			);
 			path = Win32;
+			sourceTree = "<group>";
+		};
+		C3B8A1BB151617B700B61573 /* MediaPlayer */ = {
+			isa = PBXGroup;
+			children = (
+				C3B8A1BC1516187600B61573 /* MediaPlayerManager.cpp */,
+				C3B8A1BE1516188800B61573 /* MediaPlayerManager.h */,
+			);
+			name = MediaPlayer;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -958,6 +987,9 @@
 				C35535AB150E6D74007D4774 /* MainMenuState.cpp in Sources */,
 				C3B9A3C9150F9B8C0095AE45 /* MenuInstance.cpp in Sources */,
 				378082581510D8A8005027EF /* InGameState.cpp in Sources */,
+				C3B8A1AC151611F800B61573 /* AboutState.cpp in Sources */,
+				C3B8A1B01516144400B61573 /* OptionState.cpp in Sources */,
+				C3B8A1BD1516187600B61573 /* MediaPlayerManager.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

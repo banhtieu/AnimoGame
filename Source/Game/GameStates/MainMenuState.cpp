@@ -11,7 +11,8 @@
 #include "MenuBar.h"
 #include "ExportedStrings.h"
 #include "InGameState.h"
-
+#include "AboutState.h"
+#include "OptionState.h"
 
 void MainMenuState::Init()
 {
@@ -41,7 +42,7 @@ void MainMenuState::Init()
   playX = 20;
   playY = 430;
 
-  selecting = 0;
+  selecting = false;
 }
 
 void MainMenuState::Render(Graphics2D *g)
@@ -64,6 +65,15 @@ void MainMenuState::Render(Graphics2D *g)
       switch (menuList[i]->id) {
         case M_ANIMAL_PLAY:
           Application::GetInstance()->SwitchState(new InGameState());
+          break;
+        case M_ABOUT_US:
+          Application::GetInstance()->SwitchState(new AboutState());
+          break;
+        case M_OPTION:
+          Application::GetInstance()->SwitchState(new OptionState());
+          break;
+        case M_ACHIEVEMENTS:
+          break;
         default:
           break;
       }
@@ -139,4 +149,5 @@ void MainMenuState::Update()
 void MainMenuState::Free()
 {
   delete bgSprite;
+  delete menuSprite;
 }
