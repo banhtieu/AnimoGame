@@ -33,7 +33,14 @@ TouchList* TouchManager::GetTouches()
 // Get Touches
 Touch* TouchManager::GetFirstTouch()
 {
-  return *touches->begin();
+  if (touches->size())
+  {
+    return *touches->begin();
+  }
+  else 
+  {
+    return NULL;
+  }
 }
 
 // Get Number of Touches
