@@ -9,23 +9,29 @@
 
 #include "MediaPlayerManager.h"
 #include "SoundPack.h"
+#include "MediaPlayeriPhone.h"
+
 MediaPlayerManager::MediaPlayerManager()
 {
-  
+  numberSound = NUM_SOUND;
+  for( int i=0; i< numberSound; i++)
+  {
+    listSound[i] = new MediaPlayeriPhone();
+    listSound[i]->Create(i);
+    
+  }
 }
 
 void MediaPlayerManager::Init()
 {
-  numberSound = NUM_SOUND;
-  for(int i=0; i< numberSound; i++)
-  {
-    
-  }
+  
 }
 
 void MediaPlayerManager::Play(int id)
 {
   
+  //listSound[id]->Play(0);;
+  listSound[id]->Play();
 }
 
 void MediaPlayerManager::Stop(int id)

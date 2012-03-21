@@ -7,12 +7,13 @@
 //
 
 #include "Engine.h"
-
+#include "MediaPlayerManager.h"
 Application::Application():currentState(0)
 {
   new TouchManager();
   curLanguage = 0;
   isSoundOn = true;
+  mediaPlayer = new MediaPlayerManager();
 };
 
 Application::~Application()

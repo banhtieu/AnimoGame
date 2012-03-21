@@ -10,6 +10,7 @@
 #define GameEngine_BTApplication_h
 
 
+class MediaPlayerManager;
 class TouchScreenBase;
 class Application:public Singleton<Application>
 {
@@ -26,6 +27,7 @@ protected:
   State *currentState;
 public:
   TouchScreenBase*		m_touchScreen;
+  MediaPlayerManager* mediaPlayer;
   
   int curLanguage; //en:0 vn:1
   bool isSoundOn;

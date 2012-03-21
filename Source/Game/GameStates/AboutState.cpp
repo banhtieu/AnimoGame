@@ -12,6 +12,7 @@ void AboutState::Init()
 {
   bgSprite = new Sprite();
   bgSprite->LoadSprite("MainMenuBG");
+
 }
 
 void AboutState::Update()

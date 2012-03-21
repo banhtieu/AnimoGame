@@ -9,8 +9,10 @@
 #ifndef AnimoGame_MediaPlayerManager_h
 #define AnimoGame_MediaPlayerManager_h
 #include "Engine.h"
-//#include "MediaPlayeriPhone.h"
+//#import "MediaPlayeriPhone.h"
 
+#define MAX_SOUND 10
+class MediaPlayeriPhone;
 class MediaPlayerManager
 {
 public:
@@ -22,9 +24,10 @@ public:
   void Stop(int id);
   void Pause(int id);
   void PauseAllSounds();
+  void Update();
 public:
   int numberSound;
-  
+  MediaPlayeriPhone* listSound[MAX_SOUND];
 };
 
 

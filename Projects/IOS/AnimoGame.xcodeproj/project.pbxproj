@@ -91,6 +91,11 @@
 		37F6F42E14F532C70028EDC4 /* MyGame.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37F6F42B14F532C70028EDC4 /* MyGame.cpp */; };
 		C35535AB150E6D74007D4774 /* MainMenuState.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C35535AA150E6D74007D4774 /* MainMenuState.cpp */; };
 		C364976414F68E2200E4630A /* LogoState.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C364976214F68E2200E4630A /* LogoState.cpp */; };
+		C3657D40151A263C00EBF8A7 /* 0.wav in Resources */ = {isa = PBXBuildFile; fileRef = C3657D3B151A263C00EBF8A7 /* 0.wav */; };
+		C3657D41151A263C00EBF8A7 /* 1.wav in Resources */ = {isa = PBXBuildFile; fileRef = C3657D3C151A263C00EBF8A7 /* 1.wav */; };
+		C3657D42151A263C00EBF8A7 /* 2.wav in Resources */ = {isa = PBXBuildFile; fileRef = C3657D3D151A263C00EBF8A7 /* 2.wav */; };
+		C3657D43151A263C00EBF8A7 /* 3.wav in Resources */ = {isa = PBXBuildFile; fileRef = C3657D3E151A263C00EBF8A7 /* 3.wav */; };
+		C3657D44151A263C00EBF8A7 /* 4.wav in Resources */ = {isa = PBXBuildFile; fileRef = C3657D3F151A263C00EBF8A7 /* 4.wav */; };
 		C399353714FE613200AA4169 /* Application.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C399351614FE613200AA4169 /* Application.cpp */; };
 		C399353814FE613200AA4169 /* Device.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C399351914FE613200AA4169 /* Device.cpp */; };
 		C399353914FE613200AA4169 /* Graphics2D.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C399351F14FE613200AA4169 /* Graphics2D.cpp */; };
@@ -116,6 +121,7 @@
 		C3EB35AA151101BD0053ED9C /* MenuBar.bin in Resources */ = {isa = PBXBuildFile; fileRef = C3EB35A7151101BD0053ED9C /* MenuBar.bin */; };
 		C3EB35AB151101BD0053ED9C /* MainMenuBG.bin in Resources */ = {isa = PBXBuildFile; fileRef = C3EB35A8151101BD0053ED9C /* MainMenuBG.bin */; };
 		C3EB35AC151101BD0053ED9C /* Splash.bin in Resources */ = {isa = PBXBuildFile; fileRef = C3EB35A9151101BD0053ED9C /* Splash.bin */; };
+		C3FB26FC15176AAF0056B503 /* MediaPlayeriPhone.m in Sources */ = {isa = PBXBuildFile; fileRef = C3FB26FB15176AAF0056B503 /* MediaPlayeriPhone.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -272,6 +278,11 @@
 		C35535AC150E6D80007D4774 /* MainMenuState.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainMenuState.h; sourceTree = "<group>"; };
 		C364976214F68E2200E4630A /* LogoState.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = LogoState.cpp; sourceTree = "<group>"; };
 		C364976314F68E2200E4630A /* LogoState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LogoState.h; sourceTree = "<group>"; };
+		C3657D3B151A263C00EBF8A7 /* 0.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = 0.wav; path = ../../../Binary/0.wav; sourceTree = "<group>"; };
+		C3657D3C151A263C00EBF8A7 /* 1.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = 1.wav; path = ../../../Binary/1.wav; sourceTree = "<group>"; };
+		C3657D3D151A263C00EBF8A7 /* 2.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = 2.wav; path = ../../../Binary/2.wav; sourceTree = "<group>"; };
+		C3657D3E151A263C00EBF8A7 /* 3.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = 3.wav; path = ../../../Binary/3.wav; sourceTree = "<group>"; };
+		C3657D3F151A263C00EBF8A7 /* 4.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = 4.wav; path = ../../../Binary/4.wav; sourceTree = "<group>"; };
 		C399351614FE613200AA4169 /* Application.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Application.cpp; sourceTree = "<group>"; };
 		C399351714FE613200AA4169 /* Application.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Application.h; sourceTree = "<group>"; };
 		C399351814FE613200AA4169 /* Config.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Config.h; sourceTree = "<group>"; };
@@ -322,6 +333,8 @@
 		C3EB35A7151101BD0053ED9C /* MenuBar.bin */ = {isa = PBXFileReference; lastKnownFileType = archive.macbinary; name = MenuBar.bin; path = ../../../Binary/MenuBar.bin; sourceTree = "<group>"; };
 		C3EB35A8151101BD0053ED9C /* MainMenuBG.bin */ = {isa = PBXFileReference; lastKnownFileType = archive.macbinary; name = MainMenuBG.bin; path = ../../../Binary/MainMenuBG.bin; sourceTree = "<group>"; };
 		C3EB35A9151101BD0053ED9C /* Splash.bin */ = {isa = PBXFileReference; lastKnownFileType = archive.macbinary; name = Splash.bin; path = ../../../Binary/Splash.bin; sourceTree = "<group>"; };
+		C3FB26FA15176AAF0056B503 /* MediaPlayeriPhone.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = MediaPlayeriPhone.h; path = MediaPlayer/MediaPlayeriPhone.h; sourceTree = "<group>"; };
+		C3FB26FB15176AAF0056B503 /* MediaPlayeriPhone.m */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.objcpp; fileEncoding = 4; name = MediaPlayeriPhone.m; path = MediaPlayer/MediaPlayeriPhone.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -627,6 +640,11 @@
 		37F6F42414F532580028EDC4 /* Binary */ = {
 			isa = PBXGroup;
 			children = (
+				C3657D3B151A263C00EBF8A7 /* 0.wav */,
+				C3657D3C151A263C00EBF8A7 /* 1.wav */,
+				C3657D3D151A263C00EBF8A7 /* 2.wav */,
+				C3657D3E151A263C00EBF8A7 /* 3.wav */,
+				C3657D3F151A263C00EBF8A7 /* 4.wav */,
 				37D6115A151481B000047978 /* Animals.bin */,
 				C3EB35A7151101BD0053ED9C /* MenuBar.bin */,
 				C3EB35A8151101BD0053ED9C /* MainMenuBG.bin */,
@@ -824,6 +842,8 @@
 			children = (
 				C3B8A1BC1516187600B61573 /* MediaPlayerManager.cpp */,
 				C3B8A1BE1516188800B61573 /* MediaPlayerManager.h */,
+				C3FB26FA15176AAF0056B503 /* MediaPlayeriPhone.h */,
+				C3FB26FB15176AAF0056B503 /* MediaPlayeriPhone.m */,
 			);
 			name = MediaPlayer;
 			sourceTree = "<group>";
@@ -891,6 +911,11 @@
 				C3CF01FE1512608800F4AFC5 /* Icon.png in Resources */,
 				C3CF01FF1512608800F4AFC5 /* Icon@2x.png in Resources */,
 				37D6115B151481B000047978 /* Animals.bin in Resources */,
+				C3657D40151A263C00EBF8A7 /* 0.wav in Resources */,
+				C3657D41151A263C00EBF8A7 /* 1.wav in Resources */,
+				C3657D42151A263C00EBF8A7 /* 2.wav in Resources */,
+				C3657D43151A263C00EBF8A7 /* 3.wav in Resources */,
+				C3657D44151A263C00EBF8A7 /* 4.wav in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -990,6 +1015,7 @@
 				C3B8A1AC151611F800B61573 /* AboutState.cpp in Sources */,
 				C3B8A1B01516144400B61573 /* OptionState.cpp in Sources */,
 				C3B8A1BD1516187600B61573 /* MediaPlayerManager.cpp in Sources */,
+				C3FB26FC15176AAF0056B503 /* MediaPlayeriPhone.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

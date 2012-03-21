@@ -13,6 +13,7 @@
 #include "InGameState.h"
 #include "AboutState.h"
 #include "OptionState.h"
+#include "MediaPlayerManager.h"
 
 void MainMenuState::Init()
 {
@@ -64,15 +65,20 @@ void MainMenuState::Render(Graphics2D *g)
     {
       switch (menuList[i]->id) {
         case M_ANIMAL_PLAY:
+          Application::GetInstance()->mediaPlayer->Play(0);
           Application::GetInstance()->SwitchState(new InGameState());
           break;
         case M_ABOUT_US:
+          Application::GetInstance()->mediaPlayer->Play(0);
           Application::GetInstance()->SwitchState(new AboutState());
+          
           break;
         case M_OPTION:
+          Application::GetInstance()->mediaPlayer->Play(0);
           Application::GetInstance()->SwitchState(new OptionState());
           break;
         case M_ACHIEVEMENTS:
+          Application::GetInstance()->mediaPlayer->Play(0);
           break;
         default:
           break;
@@ -81,6 +87,7 @@ void MainMenuState::Render(Graphics2D *g)
     else if(menuList[i]->isTouching())
     {
         menuSprite->DrawModule(menuList[i]->id + 1, menuList[i]->x, menuList[i]->y);      
+        Application::GetInstance()->mediaPlayer->Play(0);
     }
     
     else
