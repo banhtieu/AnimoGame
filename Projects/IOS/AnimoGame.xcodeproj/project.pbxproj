@@ -266,6 +266,7 @@
 		37F6F40C14F530B00028EDC4 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController_iPad.xib; sourceTree = "<group>"; };
 		37F6F42B14F532C70028EDC4 /* MyGame.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = MyGame.cpp; path = ../../../Source/Game/MyGame.cpp; sourceTree = "<group>"; };
 		37F6F42C14F532C70028EDC4 /* MyGame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MyGame.h; path = ../../../Source/Game/MyGame.h; sourceTree = "<group>"; };
+		37FF3CC4151A132B00FDD319 /* SoundPack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SoundPack.h; path = ../../../Data/Sounds/SoundPack.h; sourceTree = "<group>"; };
 		37FFAD3E150C7E8000571DA1 /* ExportedStrings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ExportedStrings.h; path = ../../../Source/Game/Generated/ExportedStrings.h; sourceTree = "<group>"; };
 		C35535AA150E6D74007D4774 /* MainMenuState.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MainMenuState.cpp; sourceTree = "<group>"; };
 		C35535AC150E6D80007D4774 /* MainMenuState.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainMenuState.h; sourceTree = "<group>"; };
@@ -304,7 +305,6 @@
 		C3B8A1B11516145000B61573 /* OptionState.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OptionState.h; sourceTree = "<group>"; };
 		C3B8A1BC1516187600B61573 /* MediaPlayerManager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = MediaPlayerManager.cpp; path = MediaPlayer/MediaPlayerManager.cpp; sourceTree = "<group>"; };
 		C3B8A1BE1516188800B61573 /* MediaPlayerManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = MediaPlayerManager.h; path = MediaPlayer/MediaPlayerManager.h; sourceTree = "<group>"; };
-		C3B8A1BF1516E64900B61573 /* SoundPack.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = SoundPack.h; path = ../../../Source/Game/Generated/SoundPack.h; sourceTree = "<group>"; };
 		C3B8A1C51516EAF600B61573 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		C3B9A3C8150F9B8C0095AE45 /* MenuInstance.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MenuInstance.cpp; sourceTree = "<group>"; };
 		C3B9A3CA150F9B9D0095AE45 /* MenuInstance.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuInstance.h; sourceTree = "<group>"; };
@@ -557,12 +557,12 @@
 		37D6F22C14FFCD2300008965 /* Generated */ = {
 			isa = PBXGroup;
 			children = (
+				37FF3CC4151A132B00FDD319 /* SoundPack.h */,
 				37D6115D151481CD00047978 /* Animals.h */,
 				C3EB35A0151100A30053ED9C /* MenuBar.h */,
 				C3EB35A1151100A30053ED9C /* MenuMenuBG.h */,
 				C3EB35A2151100A30053ED9C /* Splash.h */,
 				37FFAD3E150C7E8000571DA1 /* ExportedStrings.h */,
-				C3B8A1BF1516E64900B61573 /* SoundPack.h */,
 			);
 			name = Generated;
 			sourceTree = "<group>";

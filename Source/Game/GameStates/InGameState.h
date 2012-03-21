@@ -13,6 +13,8 @@
 #include <vector>
 
 using namespace std;
+#define LINES 5
+#define ROWS 10
 
 /**
  * Animal
@@ -23,6 +25,8 @@ public:
   int x;
   int y;
   int animal;
+  bool reveal;
+  Animal():x(0), y(0), animal(0), reveal(false){};
   Animal(int animal_, int x_, int y_):animal(animal_), x(x_), y(y_) {};
 };
 
@@ -37,6 +41,9 @@ public:
   void Render(Graphics2D *g);
   void Free();
   void DrawAnimal(int animal, int x, int y);
+  
+  void InitLevel(int level);
+  void RandomAnimal();
 protected:
   Sprite *animalSprite;
   int gameSpeed;
@@ -45,6 +52,12 @@ protected:
   
   vector<Animal> animals;
   Animal *selectedAnimal;
+  
+  int currentLevel;
+  int currentSpeed;
+  int maxAnimals;
+  int currentOffset;
+  Animal currentAnimals[LINES][ROWS];
   
   int oldX;
   int oldY;

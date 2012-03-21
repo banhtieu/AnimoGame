@@ -12,6 +12,9 @@
 #define ANIMAL_WIDTH 120
 #define MAX_ANIMALS 6
 #define ANIMAL_Y SCREEN_H - ANIMAL_WIDTH / 2 - 10
+#define CELL_WIDTH (ANIMAL_WIDTH + 10)
+#define ROW_WIDTH (CELL_WIDTH * ROWS)
+#define TOP_PADDING 200
 
 /**
  * Init The In Game State
@@ -25,7 +28,9 @@ void InGameState::Init()
   srand(time(NULL));
   gameTime = 0;
   rightest = SCREEN_W + ANIMAL_WIDTH / 2;
+  InitLevel(0);
   selectedAnimal = NULL;
+  
 }
 
 
@@ -74,9 +79,11 @@ void InGameState::Update()
     }
   }
   
+  currentOffset = (currentOffset + 2) % ROW_WIDTH;
+  
   if (gameTime % 100 == 0)
   {
-    animals.push_back(Animal(rand() % MAX_ANIMALS, -ANIMAL_WIDTH, ANIMAL_Y));
+    RandomAnimal();
   }
   
   for (int i = 0; i < animals.size(); i++)
@@ -103,14 +110,30 @@ void InGameState::Update()
  **/
 void InGameState::Render(Graphics2D *g)
 {
+  for (int i = 0; i < LINES; i++)
+  {
+    int startX = - currentOffset;
+    if (i & 0x1)
+    {
+      startX = - (ROW_WIDTH - currentOffset);
+    }
+    
+    for (int j = 0; j < ROWS * 2; j++)
+    {
+      DrawAnimal(currentAnimals[i][j % LINES].animal, startX + CELL_WIDTH * j, TOP_PADDING + i * CELL_WIDTH);
+    }
+  }
+  
   for (vector<Animal>::iterator i = animals.begin(); i < animals.end(); i++)
   {
     DrawAnimal((*i).animal, (*i).x, (*i).y);  
   }
+  
   if (selectedAnimal)
   {
     DrawAnimal(selectedAnimal->animal, selectedAnimal->x, selectedAnimal->y);
   }
+
 }
 
 
@@ -131,4 +154,25 @@ void InGameState::DrawAnimal(int animal, int x, int y)
   g->SetColor(Color(0xffff0000));
   g->DrawRectangle(x - ANIMAL_WIDTH / 2, y - ANIMAL_WIDTH / 2, ANIMAL_WIDTH, ANIMAL_WIDTH);
   animalSprite->DrawModule(animal, x - animalSprite->GetModuleWidth(animal) / 2, y - animalSprite->GetModuleHeight(animal) / 2);
+}
+
+// Init a Level...
+void InGameState::InitLevel(int level)
+{
+  currentLevel = level;
+  currentOffset = 0;
+  maxAnimals = 6;
+  for (int i = 0; i < LINES; i++)
+  {
+    for (int j = 0; j < ROWS; j++)
+    {
+      currentAnimals[i][j].animal = rand() % maxAnimals;
+      currentAnimals[i][j].reveal = false;
+    }
+  }
+}
+
+void InGameState::RandomAnimal()
+{
+  animals.push_back(Animal(rand() % maxAnimals, -ANIMAL_WIDTH, ANIMAL_Y));
 }
