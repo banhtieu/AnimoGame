@@ -65,20 +65,20 @@ void MainMenuState::Render(Graphics2D *g)
     {
       switch (menuList[i]->id) {
         case M_ANIMAL_PLAY:
-          Application::GetInstance()->mediaPlayer->Play(0);
+          Application::GetInstance()->mediaPlayer->Play(SELECT_SOUND);
           Application::GetInstance()->SwitchState(new InGameState());
           break;
         case M_ABOUT_US:
-          Application::GetInstance()->mediaPlayer->Play(0);
+          Application::GetInstance()->mediaPlayer->Play(SELECT_SOUND);
           Application::GetInstance()->SwitchState(new AboutState());
           
           break;
         case M_OPTION:
-          Application::GetInstance()->mediaPlayer->Play(0);
+          Application::GetInstance()->mediaPlayer->Play(SELECT_SOUND);
           Application::GetInstance()->SwitchState(new OptionState());
           break;
         case M_ACHIEVEMENTS:
-          Application::GetInstance()->mediaPlayer->Play(0);
+          Application::GetInstance()->mediaPlayer->Play(SELECT_SOUND);
           break;
         default:
           break;
@@ -87,7 +87,7 @@ void MainMenuState::Render(Graphics2D *g)
     else if(menuList[i]->isTouching())
     {
         menuSprite->DrawModule(menuList[i]->id + 1, menuList[i]->x, menuList[i]->y);      
-        Application::GetInstance()->mediaPlayer->Play(0);
+        //Application::GetInstance()->mediaPlayer->Play(0);
     }
     
     else
@@ -146,6 +146,7 @@ void MainMenuState::Update()
       selecting = false;
       if (playX >= SCREEN_W - 30 -  menuSprite->GetModuleWidth(M_ANIMAL_PLAY_SHADOW))
       {
+        Application::GetInstance()->mediaPlayer->Play(PLAY_SOUND);
         Application::GetInstance()->SwitchState(new InGameState());
       }
     }

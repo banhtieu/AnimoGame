@@ -10,6 +10,7 @@
 #define AnimoGame_MainMenuState_h
 
 #include "Engine.h"
+#include "SoundPack.h"
 
 #define NUM_MENU 5
 class MainMenuState: public State, Singleton<MainMenuState>

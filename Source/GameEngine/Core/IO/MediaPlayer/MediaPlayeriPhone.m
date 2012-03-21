@@ -28,7 +28,5 @@ void MediaPlayeriPhone::Create(int id)
 
 void MediaPlayeriPhone::Play()
 {
-  if([player isPlaying])
-    [player stop];
   [player play];
 }
