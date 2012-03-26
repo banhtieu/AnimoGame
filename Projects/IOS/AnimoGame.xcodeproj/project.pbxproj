@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		370F24CC1520B61100771567 /* AnimalShadows.bin in Resources */ = {isa = PBXBuildFile; fileRef = 370F24CB1520B61100771567 /* AnimalShadows.bin */; };
 		372446C41502232B00DA2202 /* b2BroadPhase.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 372446641502232B00DA2202 /* b2BroadPhase.cpp */; };
 		372446C51502232B00DA2202 /* b2CollideCircle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 372446661502232B00DA2202 /* b2CollideCircle.cpp */; };
 		372446C61502232B00DA2202 /* b2CollideEdge.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 372446671502232B00DA2202 /* b2CollideEdge.cpp */; };
@@ -55,6 +56,8 @@
 		372446FB15026A2C00DA2202 /* Actor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 372446FA15026A2B00DA2202 /* Actor.cpp */; };
 		372FC5C1150519D8009376E0 /* Touch.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 372FC5BD150519D8009376E0 /* Touch.cpp */; };
 		372FC5C2150519D8009376E0 /* TouchManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 372FC5BF150519D8009376E0 /* TouchManager.cpp */; };
+		3745C4A5151F161E003DB397 /* AnimalTray.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3745C4A4151F161E003DB397 /* AnimalTray.cpp */; };
+		3745C4A9151F273B003DB397 /* AnimalBoard.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3745C4A8151F273B003DB397 /* AnimalBoard.cpp */; };
 		37619984150B8E20003B400F /* strings.en.bin in Resources */ = {isa = PBXBuildFile; fileRef = 37619982150B8E20003B400F /* strings.en.bin */; };
 		37619985150B8E20003B400F /* strings.vi.bin in Resources */ = {isa = PBXBuildFile; fileRef = 37619983150B8E20003B400F /* strings.vi.bin */; };
 		378082581510D8A8005027EF /* InGameState.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 378082571510D8A8005027EF /* InGameState.cpp */; };
@@ -125,6 +128,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		370F24CB1520B61100771567 /* AnimalShadows.bin */ = {isa = PBXFileReference; lastKnownFileType = archive.macbinary; name = AnimalShadows.bin; path = ../../../Binary/AnimalShadows.bin; sourceTree = "<group>"; };
 		372446621502232B00DA2202 /* Box2D.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Box2D.h; sourceTree = "<group>"; };
 		372446641502232B00DA2202 /* b2BroadPhase.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = b2BroadPhase.cpp; sourceTree = "<group>"; };
 		372446651502232B00DA2202 /* b2BroadPhase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = b2BroadPhase.h; sourceTree = "<group>"; };
@@ -222,6 +226,11 @@
 		372FC5BE150519D8009376E0 /* Touch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Touch.h; sourceTree = "<group>"; };
 		372FC5BF150519D8009376E0 /* TouchManager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = TouchManager.cpp; sourceTree = "<group>"; };
 		372FC5C0150519D8009376E0 /* TouchManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TouchManager.h; sourceTree = "<group>"; };
+		3745C4A2151F13DC003DB397 /* AnimalTray.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AnimalTray.h; path = InGame/AnimalTray.h; sourceTree = "<group>"; };
+		3745C4A4151F161E003DB397 /* AnimalTray.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = AnimalTray.cpp; path = InGame/AnimalTray.cpp; sourceTree = "<group>"; };
+		3745C4A6151F176B003DB397 /* Animal.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Animal.h; path = InGame/Animal.h; sourceTree = "<group>"; };
+		3745C4A7151F19F7003DB397 /* AnimalBoard.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AnimalBoard.h; path = InGame/AnimalBoard.h; sourceTree = "<group>"; };
+		3745C4A8151F273B003DB397 /* AnimalBoard.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = AnimalBoard.cpp; sourceTree = "<group>"; };
 		37619982150B8E20003B400F /* strings.en.bin */ = {isa = PBXFileReference; lastKnownFileType = archive.macbinary; name = strings.en.bin; path = ../../../Binary/strings.en.bin; sourceTree = "<group>"; };
 		37619983150B8E20003B400F /* strings.vi.bin */ = {isa = PBXFileReference; lastKnownFileType = archive.macbinary; name = strings.vi.bin; path = ../../../Binary/strings.vi.bin; sourceTree = "<group>"; };
 		378082571510D8A8005027EF /* InGameState.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = InGameState.cpp; sourceTree = "<group>"; };
@@ -537,6 +546,18 @@
 			path = Touch;
 			sourceTree = "<group>";
 		};
+		3745C4A3151F160B003DB397 /* InGame */ = {
+			isa = PBXGroup;
+			children = (
+				3745C4A2151F13DC003DB397 /* AnimalTray.h */,
+				3745C4A4151F161E003DB397 /* AnimalTray.cpp */,
+				3745C4A6151F176B003DB397 /* Animal.h */,
+				3745C4A7151F19F7003DB397 /* AnimalBoard.h */,
+				3745C4A8151F273B003DB397 /* AnimalBoard.cpp */,
+			);
+			name = InGame;
+			sourceTree = "<group>";
+		};
 		3781E2EB14F5415D006E426E /* LIBPNG */ = {
 			isa = PBXGroup;
 			children = (
@@ -645,6 +666,7 @@
 				C3657D3D151A263C00EBF8A7 /* 2.wav */,
 				C3657D3E151A263C00EBF8A7 /* 3.wav */,
 				C3657D3F151A263C00EBF8A7 /* 4.wav */,
+				370F24CB1520B61100771567 /* AnimalShadows.bin */,
 				37D6115A151481B000047978 /* Animals.bin */,
 				C3EB35A7151101BD0053ED9C /* MenuBar.bin */,
 				C3EB35A8151101BD0053ED9C /* MainMenuBG.bin */,
@@ -701,6 +723,7 @@
 		C364976014F68DE400E4630A /* GameStates */ = {
 			isa = PBXGroup;
 			children = (
+				3745C4A3151F160B003DB397 /* InGame */,
 				C364976214F68E2200E4630A /* LogoState.cpp */,
 				C364976314F68E2200E4630A /* LogoState.h */,
 				C35535AA150E6D74007D4774 /* MainMenuState.cpp */,
@@ -916,6 +939,7 @@
 				C3657D42151A263C00EBF8A7 /* 2.wav in Resources */,
 				C3657D43151A263C00EBF8A7 /* 3.wav in Resources */,
 				C3657D44151A263C00EBF8A7 /* 4.wav in Resources */,
+				370F24CC1520B61100771567 /* AnimalShadows.bin in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1016,6 +1040,8 @@
 				C3B8A1B01516144400B61573 /* OptionState.cpp in Sources */,
 				C3B8A1BD1516187600B61573 /* MediaPlayerManager.cpp in Sources */,
 				C3FB26FC15176AAF0056B503 /* MediaPlayeriPhone.m in Sources */,
+				3745C4A5151F161E003DB397 /* AnimalTray.cpp in Sources */,
+				3745C4A9151F273B003DB397 /* AnimalBoard.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

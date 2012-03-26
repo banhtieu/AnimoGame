@@ -40,12 +40,14 @@ public:
   void Update();
   void Render(Graphics2D *g);
   void Free();
-  void DrawAnimal(int animal, int x, int y);
+  void DrawAnimal(int animal, int x, int y, int isShadow = false);
   
   void InitLevel(int level);
   void RandomAnimal();
 protected:
   Sprite *animalSprite;
+  Sprite *shadowSprite;
+  
   int gameSpeed;
   int gameTime;
   int rightest;

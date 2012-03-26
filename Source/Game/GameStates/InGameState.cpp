@@ -24,6 +24,9 @@ void InGameState::Init()
   animalSprite = new Sprite();
   animalSprite->LoadSprite("Animals");
   
+  shadowSprite = new Sprite();
+  shadowSprite->LoadSprite("AnimalShadows");
+  
   animals.clear();
   srand(time(NULL));
   gameTime = 0;
@@ -120,7 +123,7 @@ void InGameState::Render(Graphics2D *g)
     
     for (int j = 0; j < ROWS * 2; j++)
     {
-      DrawAnimal(currentAnimals[i][j % LINES].animal, startX + CELL_WIDTH * j, TOP_PADDING + i * CELL_WIDTH);
+      DrawAnimal(currentAnimals[i][j % LINES].animal, startX + CELL_WIDTH * j, TOP_PADDING + i * CELL_WIDTH, true);
     }
   }
   
@@ -148,12 +151,19 @@ void InGameState::Free()
 /**
  * draw an animal
  **/
-void InGameState::DrawAnimal(int animal, int x, int y)
+void InGameState::DrawAnimal(int animal, int x, int y, int isShadow)
 {
   Graphics2D *g = Graphics2D::GetInstance();
   g->SetColor(Color(0xffff0000));
   g->DrawRectangle(x - ANIMAL_WIDTH / 2, y - ANIMAL_WIDTH / 2, ANIMAL_WIDTH, ANIMAL_WIDTH);
-  animalSprite->DrawModule(animal, x - animalSprite->GetModuleWidth(animal) / 2, y - animalSprite->GetModuleHeight(animal) / 2);
+  if (isShadow)
+  {
+    shadowSprite->DrawModule(animal, x - shadowSprite->GetModuleWidth(animal) / 2, y - shadowSprite->GetModuleHeight(animal) / 2);
+  }
+  else 
+  {
+    animalSprite->DrawModule(animal, x - animalSprite->GetModuleWidth(animal) / 2, y - animalSprite->GetModuleHeight(animal) / 2);
+  }
 }
 
 // Init a Level...
