@@ -21,9 +21,9 @@ public:
   AnimalTray();
   virtual ~AnimalTray();
   virtual bool IsFull();
-  virtual bool AddAnimal();
-  virtual bool Update();
-  virtual bool Render(Graphics2D graphics);
+  virtual void AddAnimal();
+  virtual void Update();
+  virtual void Render(Graphics2D graphics);
 protected:
   vector<Animal> animals; // Animal in Tray
 };

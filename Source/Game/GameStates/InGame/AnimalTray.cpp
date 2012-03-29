@@ -32,4 +32,28 @@ bool AnimalTray::IsFull()
   return false;
 }
 
+/**
+ * Update Tray
+ **/
+void AnimalTray::Update()
+{
+  
+}
 
+
+/**
+ *
+ **/
+void AnimalTray::AddAnimal()
+{
+  
+}
+
+
+/**
+ * Render 
+ **/
+void AnimalTray::Render(Graphics2D graphics)
+{
+  
+}
